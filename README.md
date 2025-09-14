@@ -8,12 +8,13 @@ I was mainly trying to wrap my brain around the project and fill in any gaps. I 
 
 During this time, I’m also starting to build my tech stack in my head trying to decide the best tools to use to get this done. For example, do I want to run the code from my machine or should I store it all in AWS.
 
+***
 
 ## Part 1: AWS S3 & Sourcing Datasets
 
 Set up an S3 bucket called rearc-chardee-project.
 
-s3://rearc-chardee-project/bls-data/
+Event name: bls_data
 
 Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_copy_bls.py
 
@@ -50,11 +51,12 @@ Used the IAM role giving it permissions to my S3 test environment: lambda-bls-s3
 *Note: My AWS account is for learning purposes and only contains publicly available data, so I haven’t tried to lock it down in IAM.*
 
 
-
+***
 
 
 ## Part 2: APIs
 Event name: event_api_call
+
 Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_get_api.py
 
 I had a template for API calls in my code snippets collection, so used that as a base template and modified it.
@@ -69,7 +71,7 @@ zipped up contents and uploaded them to AWS.
 
 
 
-
+***
 
 
 ## Part 3: Data Analytics
@@ -83,6 +85,7 @@ Select PySpark Glue Notebook.
 Please see .ipynb file for details and results
 
 
+***
 
 ## Part 4: AWS CDK
 
@@ -94,9 +97,12 @@ Full disclosure: ChatGPT wrote most of this code. It also suggested I add code f
 
 
 
+***
 
 
-## Project Areas of Improvement
+## Areas of Improvement
+
+### Project
 
 Improve the presentation of analysis
 
@@ -108,7 +114,7 @@ Test and optimize the AWS CDK
 
 
 
-## My Areas of Improvement
+### Personal Knowledge
 
 I need to spend more time with AWS CDK creating and optimizing scripts.
 
