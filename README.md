@@ -3,14 +3,10 @@
 
 I started with reading the instructions a few times to fully grasp the requirements and how they fit together. 
 
-
-
-Then I started doing some preliminary web research on things like copy files with Lambda, AWS CDK using Python, and more. I was mainly trying to wrap my brain around the project and fill in any gaps. I like to understand most if not all of the project and get an overview of what I need to do.
-
-
+Then I did some preliminary web research on things like copying files with Lambda, AWS CDK using Python, and more. 
+I was mainly trying to wrap my brain around the project and fill in any gaps. I like to understand most if not all of the project and get an overview of what I need to do.
 
 During this time, I’m also starting to build my tech stack in my head trying to decide the best tools to use to get this done. For example, do I want to run the code from my machine or should I store it all in AWS.
-
 
 
 ## Part 1: AWS S3 & Sourcing Datasets
@@ -37,13 +33,11 @@ Created a deployment package that included Beautiful Soup
 
    - pip install requests beautifulsoup4 -t .
 
-   - zip -r lambda\_[package.zip](package.zip) .
+   - Used this command in PowerShell since Windows 11 Personal does not have zip
 
-      - Used this command in PowerShell since Windows 11 Personal does not have zip
+      - Compress-Archive -Path .\\\* -DestinationPath .\\lambda\_[package.zip] -CompressionLevel Optimal
 
-         - Compress-Archive -Path .\\\* -DestinationPath .\\lambda\_[package.zip](package.zip) -CompressionLevel Optimal
-
-         - This should be ran from the package directory
+      - This should be ran from the package directory
 
 - Uploaded zip file to Lambda
 
@@ -62,6 +56,7 @@ Used the IAM role giving it permissions to my S3 test environment: lambda-bls-s3
 
 
 ## Part 2: APIs
+Event name: event_api_call
 
 I had a template for API calls in my code snippets collection, so used that as a base template and modified it.
 
@@ -71,17 +66,8 @@ Built new zip file using:
 
 pip install requests -t .
 
-zip -r lambda\_[package.zip](package.zip) .
+zipped up contents and uploaded them to AWS.
 
-- Used this command in PowerShell since Windows 11 Personal does not have zip
-
-- Compress-Archive -Path .\\\* -DestinationPath .\\lambda\_[package.zip](package.zip) -CompressionLevel Optimal
-
-- This should be ran from the package directory
-
-
-
-Event name: event_api_call
 
 
 
