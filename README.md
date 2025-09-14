@@ -20,22 +20,14 @@ https://rearc-chardee-project.s3.us-east-1.amazonaws.com/api_out.json
 BLS data:
 https://rearc-chardee-project.s3.us-east-1.amazonaws.com/bls-data/pr.data.0.Current
 
-
-Event name: bls_data
+### Created Lambda function bls_data
+This function downloaded the files onto the S3 bucket.
 
 Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_copy_bls.py
 
-On my laptop, I wrote a script that downloads the files to my local computer.
+Created a deployment package that included Beautiful Soup and requests
 
-I then researched and coverted it to a Lambda script making the following changes:
-
-- Changed it from writing to local files to writing to S3
-
-
-
-Created a deployment package that included Beautiful Soup
-
-- Created zip file
+- Created zip file for deployment to Lambda
 
    - pip install requests beautifulsoup4 -t .
 
@@ -47,12 +39,7 @@ Created a deployment package that included Beautiful Soup
 
 - Uploaded zip file to Lambda
 
-
-
-With some tweaking (found a few typos), I was able to get the lambda function to run.
-
 Used the IAM role giving it permissions to my S3 test environment: lambda-bls-s3-role
-
 
 
 *Note: My AWS account is for learning purposes and only contains publicly available data, so I haven’t tried to lock it down in IAM.*
