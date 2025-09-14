@@ -55,6 +55,7 @@ Used the IAM role giving it permissions to my S3 test environment: lambda-bls-s3
 
 ## Part 2: APIs
 Event name: event_api_call
+Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_get_api.py
 
 I had a template for API calls in my code snippets collection, so used that as a base template and modified it.
 
