@@ -15,11 +15,9 @@ Set up an S3 bucket called rearc-chardee-project.
 
 s3://rearc-chardee-project/bls-data/
 
-
+Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_copy_bls.py
 
 On my laptop, I wrote a script that downloads the files to my local computer.
-
-
 
 I then researched and coverted it to a Lambda script making the following changes:
 
