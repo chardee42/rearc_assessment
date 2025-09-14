@@ -85,11 +85,16 @@ Please see .ipynb file for details and results
 
 ## Part 4: AWS CDK
 
+Source: https://github.com/chardee42/rearc_assessment/blob/main/rearc-cdk.py
+
 *This code was generated with ChatGPT*
 
-I don’t have much experience with AWS CDK, so I asked ChatGPT to create a base template I could modify to create the Amazon CDK.
+I asked ChatGPT to create a base template I could modify to create the Amazon CDK.
 
-Full disclosure: ChatGPT wrote most of this code. It also suggested I add code for third lambda script so I used it.
+It also suggested I add code for third lambda script so I used it.
+
+Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_reports.py
+
 
 
 
