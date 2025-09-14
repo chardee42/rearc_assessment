@@ -76,6 +76,8 @@ zipped up contents and uploaded them to AWS.
 
 ## Part 3: Data Analytics
 
+Source: https://github.com/chardee42/rearc_assessment/blob/main/analysis.ipynb
+
 I chose SageMaker because I wanted to use PySpark but also wanted to have full access to visualizations.
 
 Got SageMaker working on my instance. This required I give special permission to the role to allow it to run with AWS Glue. 
