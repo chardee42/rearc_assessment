@@ -14,6 +14,13 @@ During this time, I’m also starting to build my tech stack in my head trying t
 
 Set up an S3 bucket called rearc-chardee-project.
 
+API data:
+https://rearc-chardee-project.s3.us-east-1.amazonaws.com/api_out.json
+
+BLS data:
+https://rearc-chardee-project.s3.us-east-1.amazonaws.com/bls-data/pr.data.0.Current
+
+
 Event name: bls_data
 
 Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_copy_bls.py
