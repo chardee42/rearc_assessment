@@ -107,9 +107,7 @@ Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_
 
 - Improve the presentation of analysis
 
-- Add more visualizations
-
-- Update the file location for Lambda functions that pull data from BLS and the API.
+   - Add more visualizations
 
 - Test and optimize the AWS CDK
 
@@ -117,6 +115,6 @@ Source: https://github.com/chardee42/rearc_assessment/blob/main/lambda_function_
 
 ### Personal Knowledge
 
-- I need to spend more time with AWS CDK creating and optimizing scripts.
+- I need to spend more time with AWS CDK, creating and optimizing scripts.
 
 
