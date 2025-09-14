@@ -44,13 +44,11 @@ def lambda_handler(event, context):
         resp = requests.get(address, headers={"User-Agent": USER_AGENT}, timeout=30)
         resp.raise_for_status()
 
-        # Try to parse JSON; if it isn't JSON, wrap raw text in a JSON object so S3 still stores valid JSON.
         try:
             payload = resp.json()
         except ValueError:
             payload = {"raw": resp.text}
 
-        # Optional: name the S3 key from the path or a fixed name
         upload_json_to_s3(payload, key="api_out.json")
          
 
@@ -60,5 +58,6 @@ def lambda_handler(event, context):
         return {"statusCode": 502, "body": json.dumps({"error": f"Upstream request failed: {str(rexc)}"})}
     except Exception as e:
         return {"statusCode": 500, "body": json.dumps({"error": str(e)})}
+
 
 
